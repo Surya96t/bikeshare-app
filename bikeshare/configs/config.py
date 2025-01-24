@@ -20,7 +20,7 @@ CFGLog = {
     },
     "output": {
         "output_path": "./data/exported_models/",
-        "xgb_model": "XGBoost_2024-09-27_15-36-43.pkl",
+        "xgb_model": "XGBoost_2025-01-24_14-51-46.pkl",
     }
 }
 
