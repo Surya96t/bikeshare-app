@@ -53,7 +53,7 @@ class BikeshareXGBoost(BaseModel):
     def evaluate(self):
         """ XGBoost predicts the results for the test data"""
         self.y_test_pred = self.model.predict(self.X_test)
-        output_config = self.config.output.output_path + self.config.output.xgb_path
+        output_config = self.config.output.output_path
         ModelSaving().save_model_metrics(self.y_test, self.y_test_pred, self._name, output_config)
         print("XGBoost model evaluation on test test completed, check model attributes for results")
         
@@ -64,7 +64,7 @@ class BikeshareXGBoost(BaseModel):
         
     def export_model(self):
         """ Saves the model """
-        output_config = self.config.output.output_path + self.config.output.xgb_path
+        output_config = self.config.output.output_path
         ModelSaving().save_model_with_timestamp(self.col_transformer, self.model, self._name, output_config)
 
 # class BikeshareDecisionTree(BaseModel):

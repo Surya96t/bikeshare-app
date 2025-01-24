@@ -19,8 +19,7 @@ CFGLog = {
         "learning_rate": 0.1
     },
     "output": {
-        "output_path": "./artifacts/",
-        "xgb_path": "xgb_model/",
+        "output_path": "./data/exported_models/",
         "xgb_model": "XGBoost_2024-09-27_15-36-43.pkl",
     }
 }

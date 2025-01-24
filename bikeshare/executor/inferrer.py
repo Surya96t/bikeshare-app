@@ -14,7 +14,7 @@ class Inferrer:
         # with open(self.rf_saved_path, "rb") as f:
         #     self.rf_col_transformer, self.rf_model = pickle.load(f)
         
-        self.xgb_saved_path = os.path.join(self.config.output.output_path, self.config.output.xgb_path, self.config.output.xgb_model)
+        self.xgb_saved_path = os.path.join(self.config.output.output_path, self.config.output.xgb_model)
         with open(self.xgb_saved_path, "rb") as f:
             self.xgb_col_transformer, self.xgb_model = pickle.load(f)
     
