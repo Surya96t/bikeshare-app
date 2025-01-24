@@ -1,6 +1,6 @@
 CFGLog = {
     "data": {
-        "path": "./data/raw/SeoulBikeData_cleaned_cols.csv",
+        "path": "./data/SeoulBikeData_cleaned_cols.csv",
         "X": [
             'hour', 'temp',
             'humidity', 'wind_speed', 
