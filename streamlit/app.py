@@ -135,7 +135,7 @@ def main():
                 if 'prediction' in st.session_state:
                     st.metric(
                         label="Predicted Rentals",
-                        value=f"{st.session_state.prediction:,.0f}",
+                        value=st.session_state.prediction[0],
                         help="Estimated bikes needed based on current inputs"
                     )
                 else:

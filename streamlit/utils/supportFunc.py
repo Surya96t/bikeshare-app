@@ -7,7 +7,7 @@ import numpy as np
 def get_cleaned_data():
     """ Returns the cleaned data """
     
-    data = pd.read_csv(r"data\SeoulBikeData_cleaned_cols.csv")
+    data = pd.read_csv(r"data/SeoulBikeData_cleaned_cols.csv")
     
     return data 
 
@@ -50,7 +50,7 @@ def sidebar_input():
 
 def create_day_month_year_columns(bikeshare):
     bikeshare["date"] = pd.to_datetime(bikeshare["date"], dayfirst=True) # dayfirst=True is used to specify the date format
- 
+
     # Extract day, month, and year
     bikeshare["day"] = bikeshare["date"].dt.day
     bikeshare["month"] = bikeshare["date"].dt.month
