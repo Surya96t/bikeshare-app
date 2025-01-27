@@ -8,7 +8,7 @@ COPY requirements.txt requirements.txt
 
 # Install any needed packages specified in requirements.txt
 RUN pip install -r requirements.txt && \
-    pip intall -e .
+    pip install -e .
 
 # The EXPOSE instruction informs Docker that the container listens on the specified network ports at runtime. 
 EXPOSE 8080
