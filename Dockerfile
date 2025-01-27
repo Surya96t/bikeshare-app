@@ -1,0 +1,15 @@
+FROM python:3.12
+COPY . /app
+
+# Set the working directory
+WORKDIR /app
+
+COPY requirements.txt requirements.txt
+
+# Install any needed packages specified in requirements.txt
+RUN pip install -r requirements.txt && \
+    pip intall -e .
+
+# The EXPOSE instruction informs Docker that the container listens on the specified network ports at runtime. 
+EXPOSE 8080
+CMD streamlit run ./streamlit/app.py --server.port=8080
